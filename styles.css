@@ -42,7 +42,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 85vh;
     text-align: center;
 }
 .span-description{
@@ -100,6 +100,24 @@ main {
 
 /*************************** Estilo para seccion de sobre mi ********************************/
 .section-about{
-    
+    background: black;
 }
+.list-unstyled li {
+    transition: transform 0.3s ease;
+}
+.list-unstyled li:hover {
+    transform: translateX(5px);
+}
+.rounded-circle {
+    border: 3px solid #dee2e6;
+    /* Borde para la foto */
+}
+@media (max-width: 768px) {
+    .ps-md-5 {
+        padding-left: 0 !important;
+    }
 
+    .section-about {
+        text-align: center;
+    }
+}
