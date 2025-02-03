@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcides Sainz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" data-lang="title" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" data-lang="about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-lang="projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang="contact">Contacto</a></li>
+                </ul>
+                <button id="language-toggle" class="btn btn-outline-light ms-3">🇺🇸 English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Presentación -->
+        <section id="presentation" class="section section-presentation">
+            <div class="container my-5 text-center">
+                <div>
+                    <h1 data-lang="greeting">Alcides Sainz</h1>
+                    <span class="span-description" data-lang="description">Desarrollador Web</span>
+                </div>
+                <div class="mt-4">
+                    <!-- Botón para descargar CV -->
+                    <a style="font-size: 1.3rem;" href="assets/documents/CV Alcides Sainz.pdf" download
+                        class="btn btn-outline-light me-2" data-lang="downloadCv">
+                        Descargar CV
+                    </a>
+                    <!-- Botón para contacto vía WhatsApp -->
+                    <a style="font-size: 1.3rem;" href="https://wa.me/+5930987493979" target="_blank"
+                        class="btn btn-outline-light">
+                        <i class="bi bi-whatsapp"></i>
+                        <span data-lang="whatsappContact">Contactar por WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Sobre Mí -->
+        <section id="about" class="section section-about">
+           
+        </section>
+
+        <!-- Flecha fija para navegación -->
+        <div class="scroll-arrow">
+            <a href="#" id="nextSection">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+
+        <!-- Aquí podrías agregar más secciones como "Proyectos" y "Contacto" -->
+    </main>
+
+    <!-- Footer -->
+    <footer data-lang="footer" class="custom-footer text-center p-3">
+        © 2025 Diseñado y desarrollado por Alcides Sainz
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
