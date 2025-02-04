@@ -7,6 +7,8 @@
     <title>Alcides Sainz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Rye&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,15 +17,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand" data-lang="title" href="#">Mi Portafolio</a>
+            <a class="navbar-brand nav-link" data-lang="title" href="#presentation">Mi Portafolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#presentation" data-lang="presentation">Inicio</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-lang="about">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects" data-lang="projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang="contact">Contacto</a></li>
                 </ul>
                 <button id="language-toggle" class="btn btn-outline-light ms-3">🇺🇸 English</button>
             </div>
@@ -54,60 +57,203 @@
                 </div>
             </div>
         </section>
-        
-<!-- Sección Sobre Mí -->
-<section id="about" class="section section-about py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Columna izquierda -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div class="d-flex flex-md-row flex-column align-items-center gap-4">
-                    <!-- Foto -->
-                    <img src="assets/images/yo.jpeg" alt="Mi foto" class="img-fluid rounded-circle"
-                        style="max-width: 200px; width: 100%;">
 
-                    <!-- Nombre -->
-                    <h2 class="display-5 mb-0">Alcides Sainz</h2>
-                </div>
+        <!-- Sección Sobre Mí -->
+        <section id="about" class="section section-about py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Columna izquierda (Foto y Descripción) -->
+                    <div class="col-md-6 about-left">
+                        <div class="d-flex flex-md-row flex-column align-items-center gap-4">
+                            <img src="assets/images/yo.jpeg" alt="Foto de Alcides Sainz" class="img-fluid miFoto">
+                            <h2 class="display-5 mb-0">Alcides Sainz</h2>
+                        </div>
+                        <div class="lead mt-4 sobreMi">
+                            <p data-lang="aboutMe1">
+                                Soy un apasionado de la programación y el desarrollo de experiencias digitales
+                                atractivas,
+                                funcionales e innovadoras. Me especializo en el desarrollo web con ASP.NET Core y
+                                Angular,
+                                creando interfaces dinámicas e interactivas que mejoran la experiencia del usuario.
+                            </p>
+                            <p data-lang="aboutMe2">
+                                Me motiva la resolución de problemas, la optimización del código y la creación de
+                                proyectos
+                                que impacten de manera positiva.
+                            </p>
+                        </div>
+                    </div>
 
-                <!-- Descripción (debajo del nombre y foto) -->
-                <p class="lead mt-4" data-lang="aboutDescription">
-                    Soy un desarrollador web apasionado por la creación de experiencias digitales
-                    atractivas y funcionales. Me especializo en aplicaciones web modernas y
-                    siempre estoy buscando nuevos desafíos para mejorar mis habilidades.
-                </p>
-            </div>
-
-            <!-- Columna derecha -->
-            <div class="col-md-6">
-                <div class="ps-md-5">
-                    <h3 class="h4 mb-4" data-lang="technologiesTitle">Tecnologías que conozco</h3>
-                    <div class="row">
-                        <!-- Primera columna de tecnologías -->
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>HTML5</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>CSS3/SASS</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>JavaScript (ES6+)</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>TypeScript</li>
-                            </ul>
+                    <!-- Columna derecha (Habilidades) -->
+                    <div class="col-md-6 about-right">
+                        <div class="ps-md-5">
+                            <h1 style="font-size: 50px;" class="h4 mb-4 text-center" data-lang="skils">Habilidades</h1>
+                            <div class="row" style="font-size: 20px;">
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled skills-list">
+                                        <li><i class="bi bi-check2 me-2"></i>HTML5</li>
+                                        <li><i class="bi bi-check2 me-2"></i>CSS3</li>
+                                        <li><i class="bi bi-check2 me-2"></i>JavaScript</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Bootstrap</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Angular</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled skills-list">
+                                        <li><i class="bi bi-check2 me-2"></i>C#</li>
+                                        <li><i class="bi bi-check2 me-2"></i>ASP .NET Core</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Python</li>
+                                        <li><i class="bi bi-check2 me-2"></i>C++</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Java Spring Boot</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="list-unstyled skills-list">
+                                        <li><i class="bi bi-check2 me-2"></i>SQL Server</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Git/Github</li>
+                                        <li><i class="bi bi-check2 me-2"></i>MYSQL</li>
+                                        <li><i class="bi bi-check2 me-2"></i>Entity Framework</li>
+                                        <li><i class="bi bi-check2 me-2"></i>MVC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sección de Iconos de Tecnologías - Opción Moderna -->
+                        <div class="tech-icons modern-tech mt-4">
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/html.png" alt="HTML5">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/css.png" alt="CSS3">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/js.png" alt="JavaScript">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/angular.png" alt="Angular">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/boot.png" alt="Bootstrap">
+                                </div>
+                                <div class="tech-item" >
+                                    <img src="assets/images/icons/csharp2.png" alt="C#">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/netcore.png" alt="ASP.NET Core">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/python.png" alt="Python">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/mysql.png" alt="MySQL">
+                                </div>
+                                <div class="tech-item">
+                                    <img src="assets/images/icons/java.png" alt="Java">
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Segunda columna de tecnologías -->
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>Angular</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>Node.js</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>Bootstrap</li>
-                                <li class="mb-3"><i class="bi bi-check2 me-2"></i>Git/GitHub</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="projects" class="section section-projects py-5">
+            <div class="container">
+                <h1 class="mb-3" data-lang="projects">Proyectos</h1>
+                <div class="row g-4 projects">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="assets/images/proyectos/Peliculas/1.png" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title" data-lang="project-1-title">ASMDB (Movies Library)</h5>
+                                <p class="card-text justificado" data-lang="project1">Libreria de peliculas y actores
+                                    con su respectiva API e interfaz gráfica para realizar las
+                                    configuraciones de la aplicación, añadir peliculas,celebridades,calificarlos,etc</p>
+                                <!-- Chips de tecnologías -->
+                                <div class="tech-chips my-3">
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/netcore.png"
+                                            alt="ASP.NET Core" class="chip-icon"> ASP .NET Core</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/angular.png"
+                                            alt="Angular" class="chip-icon">Angular</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/html.png"
+                                            alt="HTML" class="chip-icon">
+                                        HTML</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/css.png"
+                                            alt="CSS" class="chip-icon">CSS</span>
+                                    <span class="badge bg-secondary mt-1"><img src="assets/images/icons/boot.png"
+                                            alt="Bootstrap" class="chip-icon">Bootstrap</span>
+                                </div>
+                                <a href="https://github.com/AlcidesSainz/PeliculasApi" target="_blank"
+                                    class="btn btn-primary"><img src="assets/images/icons/github.png" alt="github"
+                                        class="chip-icon"><span data-lang="buttonProject">Ver Proyecto</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="assets/images/proyectos/Juegos/1.png" class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">The Gaming Library</h5>
+                                <p class="card-text  justificado" data-lang="project2">Librería de videojuegos
+                                    consumiendo la API RAWG que brinda toda la información necesaria sobre estos,
+                                    valoraciones, trailers, fotos, etc.</p>
+                                <div class="tech-chips my-3">
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/html.png"
+                                            alt="html" class="chip-icon"> HTML</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/css.png"
+                                            alt="css" class="chip-icon">CSS</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/js.png"
+                                            alt="js" class="chip-icon">Javascript</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/jQuery.png"
+                                            alt="jQuery" class="chip-icon">Jquery</span>
+                                    <span class="badge bg-secondary mt-1"><img src="assets/images/icons/boot.png"
+                                            alt="boot" class="chip-icon">Bootstrap</span>
+                                </div>
+                                <a href="https://github.com/AlcidesSainz/videogameWebSite3.0" target="_blank"
+                                    class="btn btn-primary"><img src="assets/images/icons/github.png" alt="github"
+                                        class="chip-icon"> <span data-lang="buttonProject">Ver Proyecto</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="assets/images/proyectos/Condominio/1.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title" data-lang="projectTitle3">Sistema de control de condominios</h5>
+                                <p class="card-text justificado" data-lang="project3">Sistema para el control y
+                                    administración de condominios con funcionalidades como pagos, reservas, gastos,
+                                    incidencias, directivas, entre otras.</p>
+                                <div class="tech-chips my-3">
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/netcore.png"
+                                            alt="ASP.NET Core" class="chip-icon">ASP
+                                        .Net Core</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/html.png"
+                                            alt="HTML" class="chip-icon">
+                                        HTML</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/css.png"
+                                            alt="CSS" class="chip-icon">CSS</span>
+                                    <span class="badge bg-secondary"><img src="assets/images/icons/js.png"
+                                            alt="Javascript" class="chip-icon">Javascript</span>
+                                    <span class="badge bg-secondary mt-1"><img src="assets/images/icons/boot.png"
+                                            alt="Bootstrap" class="chip-icon">Bootstrap</span>
+                                </div>
+                                <a href="#" class="btn btn-primary disabled"><img src="assets/images/icons/github.png"
+                                        alt="Github" class="chip-icon"><span data-lang="buttonProject">Ver
+                                        Proyecto</span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes agregar más tarjetas de proyectos siguiendo el mismo formato -->
+                </div>
+            </div>
+        </section>
+
 
         <!-- Flecha fija para navegación -->
         <div class="scroll-arrow">
@@ -120,8 +266,28 @@
     </main>
 
     <!-- Footer -->
-    <footer data-lang="footer" class="custom-footer text-center p-3">
-        © 2025 Diseñado y desarrollado por Alcides Sainz
+    <footer class="custom-footer p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span data-lang="footer">
+                    © 2025 Diseñado y desarrollado por Alcides Sainz
+                </span>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="https://github.com/AlcidesSainz" target="_blank" class="footer-icon">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/alcides-sainz/" target="_blank" class="footer-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:alcidessainz99@gmail.com" class="footer-icon">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://wa.me/+5930987493979" target="_blank" class="footer-icon">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
