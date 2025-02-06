@@ -140,14 +140,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    window.addEventListener('scroll', () => {
-        if (isScrolling) return;
-        
-        const scrollPos = window.scrollY + (window.innerHeight / 2);
-        sections.forEach((section, index) => {
-            if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
-                currentSectionIndex = index;
-            }
-        });
-    });
+
 });

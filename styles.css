@@ -124,11 +124,11 @@ main {
 }
 
 .miFoto {
-    border: 5px solid #500606;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
     width: 100%;
     max-width: 250px;
+    margin-left: 1rem;
 }
 
 .skills-list li {
@@ -257,4 +257,12 @@ main {
 }
 .tech-chips{
     font-size: 20px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(70%) sepia(41%) saturate(989%) hue-rotate(344deg) brightness(92%) contrast(91%);
+}
+.carousel-item img {
+    height: 200px;
+    object-fit: cover;
 }
