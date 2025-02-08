@@ -1,7 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: 'RedDeadFont';
     src: url('chinese\ rocks\ rg.otf') format('truetype');
-}
+} */
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -12,7 +13,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'RedDeadFont', sans-serif;
+    font-family: 'Chinese Rocks Rg', sans-serif;
     background-color: #660b0b;
     color: #F2E3C6;
     text-shadow: 2px 2px 4px black;
