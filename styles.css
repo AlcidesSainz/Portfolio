@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'RedDeadFont';
-    src: url('/assets/fonts/chinese\ rocks\ rg.otf') format('truetype');
+    src: url('chinese\ rocks\ rg.otf') format('truetype');
 }
 ::-webkit-scrollbar {
     display: none;
