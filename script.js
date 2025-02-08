@@ -126,19 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    window.addEventListener('wheel', handleWheel, { passive: false });
-    
-    function handleWheel(e) {
-        e.preventDefault();
-        if (isScrolling) return;
-        
-        const delta = Math.sign(e.deltaY);
-        const newIndex = Math.max(0, Math.min(currentSectionIndex + delta, sections.length - 1));
-        
-        if (newIndex !== currentSectionIndex) {
-            navigateToSection(newIndex);
-        }
-    }
 
 
 });

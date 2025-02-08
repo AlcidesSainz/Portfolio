@@ -26,7 +26,7 @@ html {
 }
 .section {
     min-height: 100vh;
-    padding: 40px 0;
+    padding: 20px 0;
 
 }
 main {
@@ -106,7 +106,7 @@ main {
 
 /*************************** Estilo para sección "Sobre Mí" ********************************/
 .section-about {
-    background: black;
+    background-color: black;
     color: #F2E3C6;
 }
 .sobreMi p {
