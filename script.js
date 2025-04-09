@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonProject: {
       es: "Ver proyecto",
       en: "View project",
-    }
+    },
   };
 
   let currentLanguage = "es";
@@ -86,59 +86,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //Configuracion de naveegacion por secciones
-    const sections = Array.from(document.querySelectorAll('.section'));
-    let currentSectionIndex = 0;
-    let isScrolling = false;
+  const sections = Array.from(document.querySelectorAll(".section"));
+  let currentSectionIndex = 0;
+  let isScrolling = false;
 
-    function navigateToSection(index) {
-        if (isScrolling || index < 0 || index >= sections.length) return;
-        
-        isScrolling = true;
-        currentSectionIndex = index;
-        
-        sections[index].scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+  function navigateToSection(index) {
+    if (isScrolling || index < 0 || index >= sections.length) return;
 
-        setTimeout(() => {
-            isScrolling = false;
-        }, 1000);
-    }
+    isScrolling = true;
+    currentSectionIndex = index;
 
-    document.getElementById('nextSection').addEventListener('click', (e) => {
-        e.preventDefault();
-        navigateToSection((currentSectionIndex + 1) % sections.length);
+    sections[index].scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetIndex = sections.findIndex(s => s.id === targetId);
-            
-            if (targetIndex !== -1) {
-                navigateToSection(targetIndex);
-            }
-            
-            const navbar = bootstrap.Collapse.getInstance(document.getElementById('navbarNav'));
-            if (navbar) navbar.hide();
-        });
+    setTimeout(() => {
+      isScrolling = false;
+    }, 1000);
+  }
+
+  document.getElementById("nextSection").addEventListener("click", (e) => {
+    e.preventDefault();
+    navigateToSection((currentSectionIndex + 1) % sections.length);
+  });
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetIndex = sections.findIndex((s) => s.id === targetId);
+
+      if (targetIndex !== -1) {
+        navigateToSection(targetIndex);
+      }
+
+      const navbar = bootstrap.Collapse.getInstance(
+        document.getElementById("navbarNav")
+      );
+      if (navbar) navbar.hide();
     });
-
-    window.addEventListener('wheel', handleWheel, { passive: false });
-    
-    function handleWheel(e) {
-        e.preventDefault();
-        if (isScrolling) return;
-        
-        const delta = Math.sign(e.deltaY);
-        const newIndex = Math.max(0, Math.min(currentSectionIndex + delta, sections.length - 1));
-        
-        if (newIndex !== currentSectionIndex) {
-            navigateToSection(newIndex);
-        }
-    }
-
-
+  });
 });
